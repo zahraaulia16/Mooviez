@@ -3,7 +3,6 @@
 /* eslint-disable import/no-import-module-exports */
 /* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const common = require('./webpack.common.js');
 
@@ -48,6 +47,5 @@ module.exports = merge(common, {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new BundleAnalyzerPlugin(),
   ],
 });
